@@ -1,32 +1,37 @@
 <template>
-  <header class="header">
-    <!-- データを表示させます。-->
+  <header class="header" v-bind:class='{active:isActive01}'>
     <div class="header__inner">
-      <h1 class="header__tit">Portfolio</h1>
+      <h1 class="header__tit">{{ title }}</h1>
       <div class="header__menu">
-        <button id="btn" class="button" type="button" >
+        <button id="btn" class="button" type="button" v-on:click='isActive01=!isActive01' v-bind:class='{active:isActive01}'>
           <span class="button__top btn_default"></span>
           <span class="button__middle btn_default"></span>
           <span class="button__bottom btn_default"></span>
         </button>
       </div>
     </div>
+    <menu>
+      <li><a href="">test</a></li>
+      <li><a href="">test</a></li>
+      <li><a href="">test</a></li>
+    </menu>
   </header>
 </template>
 
 <script>
 export default {
 //Vue インスタンスのためのデータオブジェクトです
-  // data(){
-  //   return{
-  //     title: "Portfolio",
-  //     subTitle: "A \"Creating Shared Value\" company."
-  //   }
-  // }
+  data(){
+    return{
+      title: "Portfolio",
+      isActive01: false
+    }
+  }
 }
 </script>
 <style>
 .header {
+  position: relative;
   padding-top: 50px;
 }
 .header__inner {
@@ -73,5 +78,32 @@ export default {
 .button__bottom {
   transform: translateY(6px);
 }
-
+menu {
+  position: fixed;
+  opacity: 0;
+  color: #999;
+  margin-top: 0;
+}
+.active menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-color: #fff;
+}
+.active .button__top {
+  transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.active .button__middle {
+  display: none;
+}
+.active .button__bottom {
+  transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
 </style>

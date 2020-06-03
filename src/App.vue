@@ -27,4 +27,10 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+body,
+h1,
+p {
+  margin: 0;
+  font-weight: normal;
+}
 </style>
