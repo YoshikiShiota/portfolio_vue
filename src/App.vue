@@ -29,8 +29,16 @@ export default {
 }
 body,
 h1,
-p {
+p,
+ul {
   margin: 0;
+  padding: 0;
   font-weight: normal;
+}
+menu {
+  padding: 0;
+}
+ul {
+  list-style: none;
 }
 </style>

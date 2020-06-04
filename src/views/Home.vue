@@ -33,7 +33,7 @@
 }
 .fadein {
   animation-name: fadeIn;
-  animation-duration: 4s;
+  animation-duration: 2s;
 }
 @keyframes fadeIn {
   0% {opacity: 0}
