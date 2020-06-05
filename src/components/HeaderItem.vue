@@ -38,7 +38,7 @@ export default {
 <style>
 .header {
   position: relative;
-  padding-top: 50px;
+  padding-top: 75px;
 }
 .header__inner {
   display:-webkit-box;
