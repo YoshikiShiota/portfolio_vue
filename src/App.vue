@@ -27,6 +27,9 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+::selection {
+  background-color: rgb(206, 205, 205);
+}
 body,
 h1,
 p,

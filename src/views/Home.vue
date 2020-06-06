@@ -101,5 +101,10 @@
   color: #999;
   font-size: 20px;
   text-decoration: none;
+  transition: all 1.0s;
+}
+.detail__link:hover {
+  color: #000;
+  font-size: 25px;
 }
 </style>
