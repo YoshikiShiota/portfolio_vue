@@ -25,7 +25,7 @@ export default {
 <style>
 .footer_inner {
   display: block;
-  width: 85%;
+  width: 950px;
   margin: 0 auto;
 }
 .footer_top {

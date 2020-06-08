@@ -39,7 +39,7 @@
 
 <style>
 .content {
-  width: 85%;
+  width: 950px;
   margin: 0 auto 100px;
 }
 .content__top {

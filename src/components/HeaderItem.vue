@@ -47,7 +47,7 @@ export default {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 85%;
+  width: 950px;
   margin: 0 auto;
 }
 .header__tit {
