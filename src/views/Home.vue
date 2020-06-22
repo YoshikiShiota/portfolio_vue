@@ -39,7 +39,7 @@
 
 <style>
 .content {
-  width: 950px;
+  padding:  0 15vw;
   margin: 0 auto 100px;
 }
 .content__top {
@@ -106,5 +106,38 @@
 .detail__link:hover {
   color: #000;
   font-size: 25px;
+}
+@media (max-width: 1200px) {
+  .content {
+    padding: 0 10vw;
+  }
+}
+@media (max-width: 850px) {
+  .tit__first,
+  .tit__second {
+    font-size: 40px;
+  }
+  .content__top {
+    height: 0;
+    padding: 100px 0 150px;
+    background-size: 68vw;
+    background: none;
+  }
+  .content__top::after {
+    width: 0;
+    height: 0;
+  }
+  .content__first {
+    margin-bottom: 100px;
+  }
+  .content__tit {
+    font-size: 28px;
+  }
+  .detail_eng {
+    font-size: 26px;
+  }
+  .detail_jpn {
+    font-size: 25px;
+  }
 }
 </style>

@@ -25,8 +25,13 @@ export default {
 <style>
 .footer_inner {
   display: block;
-  width: 950px;
+  padding: 0 15vw;
   margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .footer_inner {
+    padding: 0 10vw;
+  }
 }
 .footer_top {
   display:-webkit-box;

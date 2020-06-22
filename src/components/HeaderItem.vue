@@ -47,8 +47,13 @@ export default {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 950px;
+  padding: 0 15vw;
   margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .header__inner {
+    padding: 0 10vw;
+  }
 }
 .header__tit {
   color:#999;
